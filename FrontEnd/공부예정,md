@@ -1,0 +1,11 @@
+DNS Resolution, CDNContent Delivery Networks 사용, 여러 호스트 이름을 통한 리소스 요청 성능 향상
+HTTP 헤더 (Expires, Cache-Control, If-Modified-Since)
+스티브 사우더스의 규칙 전부 (고성능 웹사이트)
+PageSpeed, YSlow, 크롬 개발자 도구 Audit, 크롬 개발자 도구 Timeline에서 보여주는 문제를 해결하는 법
+작업을 서버에서 해야할 때와 클라이언트에서 해야할 때 구분
+캐시, 프리 페칭pre-fetching 및 지연 로드 기법
+네이티브 자바스크립트. 직접 바닥부터 코드를 작성해야 할 때 혹은 다른 사람의 코드를 가져다 써야 할 때를 아는 것. 그리고 두 작업의 장점과 단점을 평가할 수 있는 능력
+최신 MVC 자바스크립트 라이브러리(예. AngularJS, EmberJS, ReactJS), 그래픽 라이브러리(예. D3, SnapSVG), DOM 관련 라이브러리(예. jQuery, Zepto), 게으른 로딩 또는 패키지 관리 라이브러리(예. RequireJS, CommonJS), 태스크 관리자(예. Grunt, Gulp), 패키지 관리자(예. Bower, Componentjs), 테스팅(예. Protractor, Selenium)에 대한 지식과 사용.
+이미지 포맷과 장점. 언제 무엇을 어떻게 써야 하는가에 대한 지식. 이미지 최적화 기법과 사용 계획 (스프라이트, 게으른 로딩 기법, 캐시 비움, 인터레이스드 PNG)
+CSS 표준, 최신 컨벤션과 기법(예. BEM, SMACSS, OOCSS)에 대한 지식과 사용
+자바스크립트의 컴퓨터 과학(메모리 관리, 싱글 스레드 특성, 가비지 컬렉터 알고리듬, 타임아웃, 스코핑, 호이스팅, 패턴)
