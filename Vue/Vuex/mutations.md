@@ -7,3 +7,23 @@
 따라서 뷰의 반응성을 거스르지 않게 명시적으로 상태 변화를 수행하게 mutations를 따로 만들었다.
 
 그렇게 때문에 mutations시 devtool로 체크가 가능해진다.(devtools가 mutations 시점에 호출되는 이유)
+
+## mutations 사용방법
+
+뮤테이션의 함수는 주로 대문자 조합을 쓴다.(필수는 아님, 관습적으로)
+actions에서 commit 함수로 호출
+
+```js
+.then((res) => {
+          context.commit("GET_REVIEW", res.data);// 뮤테이션 호출!
+        })
+```
+
+첫번째 인자로 state를 받고, 두번째 인자로는 actions에서 넘겨준 데이터를 받는다.
+
+```js
+GET_REVIEWS(state, payload) {
+      // 부모리뷰리스트
+      state.reviews = payload;
+    },
+```

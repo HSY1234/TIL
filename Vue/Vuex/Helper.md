@@ -28,8 +28,12 @@ export default {
 import { mapState } from "vuex";
 
 computed(){
-  ...mapState(['num'])
+  ...mapState(['num'])//1 기본 방법
   // num() {return this.$store.num; }
+
+  ...mapState({//2 이런식으로도 가능
+    num: state => state.num
+  })
 }
 
 //store
@@ -42,7 +46,21 @@ state: {
 //{{this.$store.state.num}}
 ```
 
-## 헬퍼의 유연성
+## mapGetters
+
+Getters와 State 값들은 computed로 하는게 맞다(계속 바뀌니까)
+
+```js
+computed:{
+  ...mapGetters(['fetchedAsk'])
+  //or
+  ...mapGetters({
+    askItems: 'fetchedAsk'
+  })
+}
+```
+
+## 헬퍼의 유연성(배열 표기법)
 
 ```js
 ...mapMutations([

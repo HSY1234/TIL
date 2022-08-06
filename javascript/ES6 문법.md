@@ -18,7 +18,8 @@ console.log(i); //6
 # 화살표 함수
 
 `function` 키워드를 생략하고 `=>` 로 대체  
-콜백 함수의 문법을 간결화, 콜백함수 안에 들어가는 함수는 스코프가 다르다. 스코프와 this가 달라진다.
+콜백 함수의 문법을 간결화, 콜백함수 안에 들어가는 함수는 스코프가 다르다. 스코프와 this가 달라진다.  
+화살표 함수의 this는 익명함수의 this가 전역객체를 가리키는것과 달리, 화살표함수의 상위 속성의 this를 화살표 함수 내의 this가 가리키게 된다.
 
 ```js
 //ES5
@@ -100,4 +101,94 @@ let developer = {
   //language: 'js'
   //으로 변환
 };
+```
+
+# 템플릿 리터럴(Template Literal)
+
+문자열 생성시 따옴표가 아닌 `` 백틱(`)  ``으로 감싸준다.
+
+1. 줄바꿈
+
+```js
+var str_01 = `
+Hello!
+    World!
+             JavaScript!
+happy Birthday!`;
+
+var str_01 = "Hello! \n\t World! \n\t\t\t JavaScript! \n happy Birthday!";
+```
+
+위처럼 줄바꿈등을 이스케이프 시퀀스를 사용하지 않고 사용가능
+
+2. 표현식 삽입(Expression interpolation)
+   변수나 연산을 `${}` 사이에 삽입할수 있게 되었다.
+
+- 변수
+
+```js
+var name = `hong`;
+var age = 30;
+var month = 12;
+
+console.log(name + "는 " + age * month + "달을 살았습니다."); // 불편함
+console.log(`${name}는 ${age * month}달을 살았습니다.`); // 쉽게 변형
+```
+
+- 연산
+
+```js
+console.log(`${5 + 10} 입니다`); // 15입니다.
+```
+
+# 구조 분해 문법 (Destructuring)
+
+```js
+var arr = [1, 2, 3, 4];
+var obj = {
+  a: 10,
+  b: 20,
+  c: 30,
+};
+```
+
+```js
+var { a, b, c } = obj;
+```
+
+원래 이런식으로 매번 변수를 할당해줘야한다.
+
+```js
+var josh = {
+  language: "javascript",
+  position: "front-end",
+  area: "pangyo",
+  hobby: "singing",
+  age: "102",
+};
+
+var language = josh.language;
+var position = josh.position;
+var area = josh.area;
+var hobby = josh.hobby;
+var age = josh.age;
+```
+
+구조 분해 문법 적용시
+
+```js
+var josh = {
+  language: "javascript",
+  position: "front-end",
+  area: "pangyo",
+  hobby: "singing",
+  age: "102",
+};
+
+var { language, position, area, hobby, age } = josh;
+console.log(language); // javascript
+console.log(position); // front-end
+console.log(area); // pangyo
+console.log(hobby); // singing
+console.log(age); // 102
 ```
