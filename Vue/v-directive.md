@@ -13,3 +13,10 @@ tag의 속성에 변수값을 설정할수있다.
 <a v-bind:href="url"></a>//url에 해당 값이 저장됨
 <a :href="url"></a> //v-bind 생략가능
 ```
+## v-on
+
+## v-if
+
+## v-for
+
+## v-show

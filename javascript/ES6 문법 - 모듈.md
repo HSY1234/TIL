@@ -82,7 +82,8 @@ export default class User {
 ```
 
 ```js
-import User from "./user.js"; // {User}가 아닌 User로 클래스를 가져왔습니다.
+import { User } from "./user.js"; // 원래는 export한 이름으로 {} 사이에 받아와야한다.
+import Userrr from "./user.js"; // {User}가 아닌 Userrr로 클래스를 가져왔습니다. 어차피 받을게 default로 하나 뿐이니까 이름을 내맘대로 해도 된다!!!
 
 new User("John");
 ```
