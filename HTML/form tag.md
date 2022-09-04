@@ -11,7 +11,7 @@
 
 ## form tag의 속성
 
-- action : 입력데이터의 전달 위치를 지정합니다. form을 전송할 서버 쪽의 script 파일을 지정전송되는 서버 url 또는 html 링크 ex) `action="/action_page.php" `
+- action : 입력데이터의 전달 위치를 지정합니다. form을 전송할 서버 쪽의 script 파일을 지정전송되는 서버 url 또는 html 링크 ex) `action="/action_page.php" `-php, `"/bw/singleparam"`-servlet
 - method : 입력 데이터의 전달 방식을 선택합니다. ex) get, post
 - name : form의 이름, 서버로 제출된 폼 데이터
 
